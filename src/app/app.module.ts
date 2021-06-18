@@ -11,6 +11,10 @@ import { ListBrandComponent } from './pages/brand/list-brand/list-brand.componen
 import { CreateBrandComponent } from './pages/brand/create-brand/create-brand.component';
 import { UpdateBrandComponent } from './pages/brand/update-brand/update-brand.component';
 import { FindBrandComponent } from './pages/brand/find-brand/find-brand.component';
+import { ListStatusComponent } from './pages/status/list-status/list-status.component';
+import { CreateStatusComponent } from './pages/status/create-status/create-status.component';
+import { UpdateStatusComponent } from './pages/status/update-status/update-status.component';
+import { FindStatusComponent } from './pages/status/find-status/find-status.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { FindBrandComponent } from './pages/brand/find-brand/find-brand.componen
     CreateBrandComponent,
     UpdateBrandComponent,
     FindBrandComponent,
+    ListStatusComponent,
+    CreateStatusComponent,
+    UpdateStatusComponent,
+    FindStatusComponent,
   ],
   imports: [
     BrowserModule,
