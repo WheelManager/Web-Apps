@@ -25,6 +25,6 @@ export class CreateBrandComponent implements OnInit {
       (error) => console.log(error)
     );
     this.brand = new Brand();
-    this.router.navigate(['List']);
+    this.router.navigate(['ListBrand']);
   }
 }
