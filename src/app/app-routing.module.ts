@@ -8,6 +8,11 @@ import { CreateStatusComponent } from './pages/status/create-status/create-statu
 import { FindStatusComponent } from './pages/status/find-status/find-status.component';
 import { ListStatusComponent } from './pages/status/list-status/list-status.component';
 import { UpdateStatusComponent } from './pages/status/update-status/update-status.component';
+import { CreateVehicleTypeComponent } from './pages/vehicle-type/create-vehicle-type/create-vehicle-type.component';
+import { FindVehicleTypeComponent } from './pages/vehicle-type/find-vehicle-type/find-vehicle-type.component';
+import { ListVehicleTypeComponent } from './pages/vehicle-type/list-vehicle-type/list-vehicle-type.component';
+import { UpdateVehicleTypeComponent } from './pages/vehicle-type/update-vehicle-type/update-vehicle-type.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
@@ -15,11 +20,14 @@ const routes: Routes = [
   { path: 'NewBrand', component: CreateBrandComponent },
   { path: 'UpdateBrand/:id', component: UpdateBrandComponent },
   { path: 'SearchBrand', component: FindBrandComponent },
-
   { path: 'ListStatus', component: ListStatusComponent },
   { path: 'NewStatus', component: CreateStatusComponent },
   { path: 'UpdateStatus/:id', component: UpdateStatusComponent },
   { path: 'SearchStatus', component: FindStatusComponent },
+  { path: 'ListVehicleType', component: ListVehicleTypeComponent },
+  { path: 'NewVehicleType', component: CreateVehicleTypeComponent },
+  { path: 'UpdateVehicleType/:id', component: UpdateVehicleTypeComponent },
+  { path: 'SearchVehicleType', component: FindVehicleTypeComponent },
 ];
 
 @NgModule({

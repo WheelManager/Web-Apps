@@ -15,6 +15,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--**************************************** BRAND ****************************************-->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -50,7 +51,8 @@
             </li>
           </ul>
         </li>
-        <!--Statuses-->
+        <!--**************************************** END BRAND ****************************************-->
+        <!--**************************************** VEHICLE TYPE ****************************************-->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -60,11 +62,16 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Statuses
+      
+          Vehicle Type
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="nav-link" routerLink="ListStatus"
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="ListVehicleType"
+
                 >List</a
               >
             </li>
@@ -72,7 +79,10 @@
               <hr class="dropdown-divider" />
             </li>
             <li>
-              <a class="dropdown-item" href="nav-link" routerLink="NewStatus"
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="NewVehicleType"
                 >New</a
               >
             </li>
@@ -80,17 +90,59 @@
               <hr class="dropdown-divider" />
             </li>
             <li>
-              <a class="dropdown-item" href="nav-link" routerLink="SearchStatus"
+
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="SearchVehicleType"
+
                 >Search</a
               >
             </li>
           </ul>
         </li>
+        <!--**************************************** END VEHICLE TYPE ****************************************-->
+         <!--**************************************** STATUS ****************************************-->
+            <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+              Statuses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="ListStatus"
+                  >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+                <a class="dropdown-item" href="nav-link" routerLink="NewStatus"
+                         >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+                 <a class="dropdown-item" href="nav-link" routerLink="SearchStatus"
+                        >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+         <!--**************************************** END STATUS ****************************************-->
       </ul>
       <!--asdasdasdasdasdasdsadasdasdsad-->
     </div>
   </div>
 </nav>
 <!--**************************************** END NAVBAR ****************************************-->
-
 <router-outlet></router-outlet>
