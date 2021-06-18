@@ -1,0 +1,22 @@
+<br />
+<h2 class="text-center">Actualización de Brand</h2>
+<br />
+<div>
+  <form (ngSubmit)="updateBrand()">
+    <div *ngIf="brand">
+      <div class="form-group col-md-6">
+        <label for="brandtName">Brand Name :</label>
+        <input
+          type="text"
+          class="form-control"
+          id="brandName"
+          name="brandName"
+          placeholder="Brand Name"
+          required
+          [(ngModel)]="brand.brandName"
+        />
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>
