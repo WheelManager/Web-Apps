@@ -1,0 +1,148 @@
+<!--**************************************** NAVBAR ****************************************-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">WheelManager</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--**************************************** BRAND ****************************************-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Brands
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="ListBrand"
+                >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="NewBrand"
+                >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="SearchBrand"
+                >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+        <!--**************************************** END BRAND ****************************************-->
+        <!--**************************************** VEHICLE TYPE ****************************************-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+      
+          Vehicle Type
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="ListVehicleType"
+
+                >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="NewVehicleType"
+                >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="SearchVehicleType"
+
+                >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+        <!--**************************************** END VEHICLE TYPE ****************************************-->
+         <!--**************************************** STATUS ****************************************-->
+            <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+              Statuses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="ListStatus"
+                  >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+                <a class="dropdown-item" href="nav-link" routerLink="NewStatus"
+                         >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+                 <a class="dropdown-item" href="nav-link" routerLink="SearchStatus"
+                        >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+         <!--**************************************** END STATUS ****************************************-->
+      </ul>
+      <!--asdasdasdasdasdasdsadasdasdsad-->
+    </div>
+  </div>
+</nav>
+<!--**************************************** END NAVBAR ****************************************-->
+<router-outlet></router-outlet>
