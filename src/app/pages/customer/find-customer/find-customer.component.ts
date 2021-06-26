@@ -34,6 +34,7 @@ export class FindCustomerComponent implements OnInit {
         this.customers = customers;
       });
   }
+
   searchCustomerByDni() {
     this.customerService
       .getCustomerByDni(this.customerDni)
@@ -42,6 +43,7 @@ export class FindCustomerComponent implements OnInit {
         this.customers = customers;
       });
   }
+
   searchCustomerByName() {
     this.customerService
       .getCustomerByName(this.customerName)
