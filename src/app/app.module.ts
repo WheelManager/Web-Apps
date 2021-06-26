@@ -15,6 +15,10 @@ import { ListVehicleTypeComponent } from './pages/vehicle-type/list-vehicle-type
 import { UpdateVehicleTypeComponent } from './pages/vehicle-type/update-vehicle-type/update-vehicle-type.component';
 import { FindVehicleTypeComponent } from './pages/vehicle-type/find-vehicle-type/find-vehicle-type.component';
 import { CreateVehicleTypeComponent } from './pages/vehicle-type/create-vehicle-type/create-vehicle-type.component';
+import { UpdateCustomerComponent } from './pages/customer/update-customer/update-customer.component';
+import { ListCustomerComponent } from './pages/customer/list-customer/list-customer.component';
+import { CreateCustomerComponent } from './pages/customer/create-customer/create-customer.component';
+import { FindCustomerComponent } from './pages/customer/find-customer/find-customer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { CreateVehicleTypeComponent } from './pages/vehicle-type/create-vehicle-
     UpdateVehicleTypeComponent,
     FindVehicleTypeComponent,
     CreateVehicleTypeComponent,
+    UpdateCustomerComponent,
+    ListCustomerComponent,
+    CreateCustomerComponent,
+    FindCustomerComponent,
   ],
   imports: [
     BrowserModule,
