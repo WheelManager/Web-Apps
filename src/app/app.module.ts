@@ -28,11 +28,10 @@ import { CreateCustomerComponent } from './pages/customer/create-customer/create
 import { UpdateCustomerComponent } from './pages/customer/update-customer/update-customer.component';
 import { FindCustomerComponent } from './pages/customer/find-customer/find-customer.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     ListBrandComponent,
     CreateBrandComponent,
     UpdateBrandComponent,
@@ -46,7 +45,7 @@ import { FindCustomerComponent } from './pages/customer/find-customer/find-custo
     ListVehicleTypeComponent,
     CreateVehicleTypeComponent,
     UpdateVehicleTypeComponent,
-    FindVehicleTypeComponent,  
+    FindVehicleTypeComponent,
 
     ListCustomerComponent,
     CreateCustomerComponent,
