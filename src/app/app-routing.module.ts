@@ -4,6 +4,10 @@ import { CreateBrandComponent } from './pages/brand/create-brand/create-brand.co
 import { FindBrandComponent } from './pages/brand/find-brand/find-brand.component';
 import { ListBrandComponent } from './pages/brand/list-brand/list-brand.component';
 import { UpdateBrandComponent } from './pages/brand/update-brand/update-brand.component';
+import { CreateCustomerComponent } from './pages/customer/create-customer/create-customer.component';
+import { FindCustomerComponent } from './pages/customer/find-customer/find-customer.component';
+import { ListCustomerComponent } from './pages/customer/list-customer/list-customer.component';
+import { UpdateCustomerComponent } from './pages/customer/update-customer/update-customer.component';
 import { CreateStatusComponent } from './pages/status/create-status/create-status.component';
 import { FindStatusComponent } from './pages/status/find-status/find-status.component';
 import { ListStatusComponent } from './pages/status/list-status/list-status.component';
@@ -28,6 +32,10 @@ const routes: Routes = [
   { path: 'NewVehicleType', component: CreateVehicleTypeComponent },
   { path: 'UpdateVehicleType/:id', component: UpdateVehicleTypeComponent },
   { path: 'SearchVehicleType', component: FindVehicleTypeComponent },
+  { path: 'ListCustomer', component: ListCustomerComponent },
+  { path: 'NewCustomer', component: CreateCustomerComponent },
+  { path: 'UpdateCustomer/:id', component: UpdateCustomerComponent },
+  { path: 'SearchCustomer', component: FindCustomerComponent },
 ];
 
 @NgModule({

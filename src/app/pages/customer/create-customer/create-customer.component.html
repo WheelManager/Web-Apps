@@ -1,0 +1,157 @@
+<br />
+<h2 class="text-center">Registration of Customer</h2>
+<br />
+<div class="container">
+  <div class="row">
+    <form (ngSubmit)="insertCustomer()">
+      <div>
+        <input
+          type="hidden"
+          id="CustomerId"
+          name="CustomerId"
+          required
+          [(ngModel)]="customer.id"
+        />
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="userName" class="col-sm-2 col-form-label">
+          Username :
+        </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="username"
+            required
+            [(ngModel)]="customer.username"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="password" class="col-sm-2 col-form-label">
+          Password :
+        </label>
+        <div class="col-sm-10">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+            [(ngModel)]="customer.password"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label"> Email : </label>
+        <div class="col-sm-10">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            [(ngModel)]="customer.email"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="name" class="col-sm-2 col-form-label"> Name : </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+            [(ngModel)]="customer.name"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="lastName" class="col-sm-2 col-form-label">
+          Last Name :
+        </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+            [(ngModel)]="customer.lastName"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="imageUrl" class="col-sm-2 col-form-label">
+          Image Url :
+        </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="imageUrl"
+            name="imageUrl"
+            placeholder="Image Url"
+            required
+            [(ngModel)]="customer.imageUrl"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="dni" class="col-sm-2 col-form-label"> DNI : </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="dni"
+            name="dni"
+            placeholder="DNI"
+            required
+            [(ngModel)]="customer.dni"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="gender" class="col-sm-2 col-form-label"> Genero : </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="gender"
+            name="gender"
+            placeholder="Gender"
+            required
+            [(ngModel)]="customer.gender"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3 row">
+        <label for="birthDay" class="col-sm-2 col-form-label">
+          Fecha de Nacimiento :
+        </label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="birthDay"
+            name="birthDay"
+            placeholder="Birth Day"
+            required
+            [(ngModel)]="customer.birthDay"
+          />
+        </div>
+      </div>
+      <div class="d-grid col-2 mx-auto">
+        <button type="submit" class="btn btn-outline-success">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
