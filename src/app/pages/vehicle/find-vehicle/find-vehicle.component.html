@@ -1,10 +1,10 @@
 <br />
-<h2 class="text-center text-uppercase">Search Status</h2>
+<h2 class="text-center text-uppercase">Search Brands</h2>
 <br />
 <div class="container">
   <div class="row g-2">
     <div class="col-md">
-      <form class="form-floating" (ngSubmit)="searchStatusById()">
+      <form class="form-floating" (ngSubmit)="searchVehicleById()">
         <input
           type="text"
           class="form-control"
@@ -12,7 +12,7 @@
           name="id"
           required
           [(ngModel)]="id"
-          placeholder="Search Status by Id"
+          placeholder="Search Vehicle by Id"
         />
         <label class="form-control-plaintext" for="id">Id :</label>
         <div class="d-grid col-2 mx-auto">
@@ -20,8 +20,8 @@
         </div>
         <div class="card mx-auto" style="width: 18rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngIf="status">
-              {{ status.id }} - {{ status.statusName }}
+            <li class="list-group-item" *ngIf="vehicle">
+              {{ vehicle.id }} - {{ vehicle.vehicleName }}
             </li>
           </ul>
         </div>
@@ -29,30 +29,31 @@
     </div>
     <!-- SEPARADOR -->
     <div class="col-md">
-      <form class="form-floating" (ngSubmit)="searchStatusByStatusName()">
+      <form class="form-floating" (ngSubmit)="searchVehicleByName()">
         <input
           type="text"
           class="form-control"
-          id="statusName"
-          name="statusName"
+          id="vehicleName"
+          name="vehicleName"
           required
-          [(ngModel)]="statusName"
-          placeholder="Search Brand by statusName"
+          [(ngModel)]="vehicleName"
+          placeholder="Search Brand by Vehicle Name"
         />
-        <label class="form-control-plaintext" for="statusName">
-          Status Name :
+        <label class="form-control-plaintext" for="vehicleName">
+          Vehicle Name :
         </label>
         <div class="d-grid col-2 mx-auto">
           <button type="submit" class="btn btn-outline-success">Search</button>
         </div>
         <div class="card mx-auto" style="width: 18rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let status of statuses">
-              <h4>{{ status.id }} - {{ status.statusName }}</h4>
+            <li class="list-group-item" *ngFor="let vehicle of vehicles">
+              <h4>{{ vehicle.id }} - {{ vehicle.vehicleName }}</h4>
             </li>
           </ul>
         </div>
       </form>
     </div>
+    <!-- SEPARADOR -->
   </div>
 </div>

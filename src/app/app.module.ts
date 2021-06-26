@@ -27,6 +27,10 @@ import { ListCustomerComponent } from './pages/customer/list-customer/list-custo
 import { CreateCustomerComponent } from './pages/customer/create-customer/create-customer.component';
 import { UpdateCustomerComponent } from './pages/customer/update-customer/update-customer.component';
 import { FindCustomerComponent } from './pages/customer/find-customer/find-customer.component';
+import { CreateVehicleComponent } from './pages/vehicle/create-vehicle/create-vehicle.component';
+import { FindVehicleComponent } from './pages/vehicle/find-vehicle/find-vehicle.component';
+import { ListVehicleComponent } from './pages/vehicle/list-vehicle/list-vehicle.component';
+import { UpdateVehicleComponent } from './pages/vehicle/update-vehicle/update-vehicle.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +55,10 @@ import { FindCustomerComponent } from './pages/customer/find-customer/find-custo
     CreateCustomerComponent,
     UpdateCustomerComponent,
     FindCustomerComponent,
+    CreateVehicleComponent,
+    FindVehicleComponent,
+    ListVehicleComponent,
+    UpdateVehicleComponent,
   ],
   imports: [
     BrowserModule,
