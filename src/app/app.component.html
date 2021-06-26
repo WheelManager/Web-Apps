@@ -14,7 +14,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
         <!--**************************************** BRAND ****************************************-->
         <li class="nav-item dropdown">
           <a
@@ -27,7 +27,10 @@
           >
             Brands
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul
+            class="dropdown-menu text-center"
+            aria-labelledby="navbarDropdown"
+          >
             <li>
               <a class="dropdown-item" href="nav-link" routerLink="ListBrand"
                 >List</a
@@ -64,7 +67,10 @@
           >
             Vehicle Type
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul
+            class="dropdown-menu text-center"
+            aria-labelledby="navbarDropdown"
+          >
             <li>
               <a
                 class="dropdown-item"
@@ -98,10 +104,92 @@
           </ul>
         </li>
         <!--**************************************** END VEHICLE TYPE ****************************************-->
+        <!--**************************************** STATUS ****************************************-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Statuses
+          </a>
+          <ul
+            class="dropdown-menu text-center"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="ListStatus"
+                >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="NewStatus"
+                >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="SearchStatus"
+                >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+        <!--**************************************** END STATUS ****************************************-->
+        <!--**************************************** CUSTOMER ****************************************-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Customer
+          </a>
+          <ul
+            class="dropdown-menu text-center"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="ListCustomer"
+                >List</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="nav-link" routerLink="NewCustomer"
+                >New</a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="nav-link"
+                routerLink="SearchCustomer"
+                >Search</a
+              >
+            </li>
+          </ul>
+        </li>
+        <!--**************************************** END CUSTOMER ****************************************-->
       </ul>
     </div>
   </div>
 </nav>
 <!--**************************************** END NAVBAR ****************************************-->
-
 <router-outlet></router-outlet>

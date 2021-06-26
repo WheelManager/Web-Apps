@@ -1,31 +1,31 @@
 <br />
-<h2 class="text-center">Registration of Brand</h2>
+<h2 class="text-center">Registration of Status</h2>
 <br />
 <div class="container">
   <div class="row">
-    <form (ngSubmit)="insertBrand()">
+    <form (ngSubmit)="insertStatus()">
       <div>
         <input
           type="hidden"
-          id="BrandId"
-          name="BrandId"
+          id="StatusId"
+          name="StatusId"
           required
-          [(ngModel)]="brand.id"
+          [(ngModel)]="status.id"
         />
       </div>
       <div class="form-group mb-3 row">
-        <label for="brandName" class="col-sm-2 col-form-label">
-          Brand Name :
+        <label for="statusName" class="col-sm-2 col-form-label">
+          Status Name :
         </label>
         <div class="col-sm-10">
           <input
             type="text"
             class="form-control"
-            id="brandName"
-            name="brandName"
-            placeholder="Brand Name"
+            id="statusName"
+            name="statusName"
+            placeholder="StatusName"
             required
-            [(ngModel)]="brand.brandName"
+            [(ngModel)]="status.statusName"
           />
         </div>
       </div>
