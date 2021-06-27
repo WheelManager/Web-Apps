@@ -27,10 +27,16 @@ import { ListCustomerComponent } from './pages/customer/list-customer/list-custo
 import { CreateCustomerComponent } from './pages/customer/create-customer/create-customer.component';
 import { UpdateCustomerComponent } from './pages/customer/update-customer/update-customer.component';
 import { FindCustomerComponent } from './pages/customer/find-customer/find-customer.component';
+
 import { CreateVehicleComponent } from './pages/vehicle/create-vehicle/create-vehicle.component';
 import { FindVehicleComponent } from './pages/vehicle/find-vehicle/find-vehicle.component';
 import { ListVehicleComponent } from './pages/vehicle/list-vehicle/list-vehicle.component';
 import { UpdateVehicleComponent } from './pages/vehicle/update-vehicle/update-vehicle.component';
+
+import { CreateReservationComponent } from './pages/reservation/create-reservation/create-reservation.component';
+import { FindReservationComponent } from './pages/reservation/find-reservation/find-reservation.component';
+import { ListReservationComponent } from './pages/reservation/list-reservation/list-reservation.component';
+import { UpdateReservationComponent } from './pages/reservation/update-reservation/update-reservation.component';
 
 @NgModule({
   declarations: [
@@ -55,10 +61,16 @@ import { UpdateVehicleComponent } from './pages/vehicle/update-vehicle/update-ve
     CreateCustomerComponent,
     UpdateCustomerComponent,
     FindCustomerComponent,
+
     CreateVehicleComponent,
     FindVehicleComponent,
     ListVehicleComponent,
     UpdateVehicleComponent,
+
+    CreateReservationComponent,
+    FindReservationComponent,
+    ListReservationComponent,
+    UpdateReservationComponent,
   ],
   imports: [
     BrowserModule,
