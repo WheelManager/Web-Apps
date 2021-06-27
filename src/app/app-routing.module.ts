@@ -31,6 +31,11 @@ import { CreateReservationComponent } from './pages/reservation/create-reservati
 import { UpdateReservationComponent } from './pages/reservation/update-reservation/update-reservation.component';
 import { FindReservationComponent } from './pages/reservation/find-reservation/find-reservation.component';
 
+import { ListOfferComponent } from './pages/offer/list-offer/list-offer.component';
+import { CreateOfferComponent } from './pages/offer/create-offer/create-offer.component';
+import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.component';
+import { FindOfferComponent } from './pages/offer/find-offer/find-offer.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -63,6 +68,11 @@ const routes: Routes = [
   { path: 'NewReservation', component: CreateReservationComponent },
   { path: 'UpdateReservation/:id', component: UpdateReservationComponent },
   { path: 'SearchReservation', component: FindReservationComponent },
+
+  { path: 'ListOffer', component: ListOfferComponent },
+  { path: 'NewOffer', component: CreateOfferComponent },
+  { path: 'UpdateOffer/:id', component: UpdateOfferComponent },
+  { path: 'SearchOffer', component: FindOfferComponent },
 ];
 
 @NgModule({
