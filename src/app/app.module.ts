@@ -38,6 +38,11 @@ import { FindReservationComponent } from './pages/reservation/find-reservation/f
 import { ListReservationComponent } from './pages/reservation/list-reservation/list-reservation.component';
 import { UpdateReservationComponent } from './pages/reservation/update-reservation/update-reservation.component';
 
+import { CreateOfferComponent } from './pages/offer/create-offer/create-offer.component';
+import { FindOfferComponent } from './pages/offer/find-offer/find-offer.component';
+import { ListOfferComponent } from './pages/offer/list-offer/list-offer.component';
+import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +76,11 @@ import { UpdateReservationComponent } from './pages/reservation/update-reservati
     FindReservationComponent,
     ListReservationComponent,
     UpdateReservationComponent,
+    
+    CreateOfferComponent,
+    FindOfferComponent,
+    ListOfferComponent,
+    UpdateOfferComponent,
   ],
   imports: [
     BrowserModule,
