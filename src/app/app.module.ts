@@ -48,6 +48,11 @@ import { FindAddressComponent } from './pages/address/find-address/find-address.
 import { ListAddressComponent } from './pages/address/list-address/list-address.component';
 import { UpdateAddressComponent } from './pages/address/update-address/update-address.component';
 
+import { CreateCommentComponent } from './pages/comment/create-comment/create-comment.component';
+import { FindCommentComponent } from './pages/comment/find-comment/find-comment.component';
+import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
+import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,6 +96,11 @@ import { UpdateAddressComponent } from './pages/address/update-address/update-ad
     FindAddressComponent,
     ListAddressComponent,
     UpdateAddressComponent,
+    
+    CreateCommentComponent,
+    FindCommentComponent,
+    ListCommentComponent,
+    UpdateCommentComponent,
   ],
   imports: [
     BrowserModule,
