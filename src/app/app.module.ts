@@ -43,6 +43,11 @@ import { FindOfferComponent } from './pages/offer/find-offer/find-offer.componen
 import { ListOfferComponent } from './pages/offer/list-offer/list-offer.component';
 import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.component';
 
+import { CreateAddressComponent } from './pages/address/create-address/create-address.component';
+import { FindAddressComponent } from './pages/address/find-address/find-address.component';
+import { ListAddressComponent } from './pages/address/list-address/list-address.component';
+import { UpdateAddressComponent } from './pages/address/update-address/update-address.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,11 +81,16 @@ import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.co
     FindReservationComponent,
     ListReservationComponent,
     UpdateReservationComponent,
-    
+
     CreateOfferComponent,
     FindOfferComponent,
     ListOfferComponent,
     UpdateOfferComponent,
+
+    CreateAddressComponent,
+    FindAddressComponent,
+    ListAddressComponent,
+    UpdateAddressComponent,
   ],
   imports: [
     BrowserModule,

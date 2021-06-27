@@ -36,6 +36,11 @@ import { CreateOfferComponent } from './pages/offer/create-offer/create-offer.co
 import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.component';
 import { FindOfferComponent } from './pages/offer/find-offer/find-offer.component';
 
+import { ListAddressComponent } from './pages/address/list-address/list-address.component';
+import { CreateAddressComponent } from './pages/address/create-address/create-address.component';
+import { UpdateAddressComponent } from './pages/address/update-address/update-address.component';
+import { FindAddressComponent } from './pages/address/find-address/find-address.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -73,6 +78,11 @@ const routes: Routes = [
   { path: 'NewOffer', component: CreateOfferComponent },
   { path: 'UpdateOffer/:id', component: UpdateOfferComponent },
   { path: 'SearchOffer', component: FindOfferComponent },
+
+  { path: 'ListAddress', component: ListAddressComponent },
+  { path: 'NewAddress', component: CreateAddressComponent },
+  { path: 'UpdateAddress/:id', component: UpdateAddressComponent },
+  { path: 'SearchAddress', component: FindAddressComponent },
 ];
 
 @NgModule({
