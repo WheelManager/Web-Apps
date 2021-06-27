@@ -41,6 +41,11 @@ import { CreateAddressComponent } from './pages/address/create-address/create-ad
 import { UpdateAddressComponent } from './pages/address/update-address/update-address.component';
 import { FindAddressComponent } from './pages/address/find-address/find-address.component';
 
+import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
+import { CreateCommentComponent } from './pages/comment/create-comment/create-comment.component';
+import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
+import { FindCommentComponent } from './pages/comment/find-comment/find-comment.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -83,6 +88,11 @@ const routes: Routes = [
   { path: 'NewAddress', component: CreateAddressComponent },
   { path: 'UpdateAddress/:id', component: UpdateAddressComponent },
   { path: 'SearchAddress', component: FindAddressComponent },
+
+  { path: 'ListComment', component: ListCommentComponent },
+  { path: 'NewComment', component: CreateCommentComponent },
+  { path: 'UpdateComment/:id', component: UpdateCommentComponent },
+  { path: 'SearchComment', component: FindCommentComponent },
 ];
 
 @NgModule({
