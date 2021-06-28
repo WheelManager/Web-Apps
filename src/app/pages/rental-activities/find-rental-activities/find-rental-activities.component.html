@@ -1,10 +1,10 @@
 <br />
-<h2 class="text-center text-uppercase">Search User Address</h2>
+<h2 class="text-center text-uppercase">Search User Renta Activities</h2>
 <br />
 <div class="container">
   <div class="row g-2">
     <div class="col-md">
-      <form class="form-floating" (ngSubmit)="searchUserAddressesById()">
+      <form class="form-floating" (ngSubmit)="searchRentalActivitiesById()">
         <input
           type="number"
           class="form-control"
@@ -21,9 +21,9 @@
         </div>
         <div class="card mx-auto" style="width: 18rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngIf="userAddress">
-              {{ userAddress.id }}) {{ userAddress.customer.name }} -
-              {{ userAddress.address.description }}
+            <li class="list-group-item" *ngIf="rentalActivity">
+              {{ rentalActivity.id }} - {{ rentalActivity.price }} -
+              {{ rentalActivity.offer.offerName }}
             </li>
           </ul>
         </div>

@@ -6,7 +6,7 @@
     <div class="col-md">
       <form class="form-floating" (ngSubmit)="searchCommentById()">
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="id"
           name="id"
@@ -30,7 +30,7 @@
     </div>
     <!-- SEPARADOR -->
     <div class="col-md">
-      <form (ngSubmit)="searchCommentByPublicationDate()">
+      <form (ngSubmit)="searchCommentByPublicationDate()" class="form-floating">
         <input
           type="text"
           class="form-control"

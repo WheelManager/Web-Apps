@@ -56,6 +56,11 @@ import { CreateCreditCardComponent } from './pages/credit-card/create-credit-car
 import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
 import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/find-credit-card.component';
 
+import { ListRentalActivitiesComponent } from './pages/rental-activities/list-rental-activities/list-rental-activities.component';
+import { CreateRentalActivitiesComponent } from './pages/rental-activities/create-rental-activities/create-rental-activities.component';
+import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
+import { FindRentalActivitiesComponent } from './pages/rental-activities/find-rental-activities/find-rental-activities.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -113,6 +118,11 @@ const routes: Routes = [
   { path: 'NewCreditCard', component: CreateCreditCardComponent },
   { path: 'UpdateCreditCard/:id', component: UpdateCreditCardComponent },
   { path: 'SearchCreditCard', component: FindCreditCardComponent },
+
+  { path: 'ListRent', component: ListRentalActivitiesComponent },
+  { path: 'NewRent', component: CreateRentalActivitiesComponent },
+  { path: 'UpdateRent/:id', component: UpdateRentalActivitiesComponent },
+  { path: 'SearchRent', component: FindRentalActivitiesComponent },
 ];
 
 @NgModule({
