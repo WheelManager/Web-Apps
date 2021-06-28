@@ -61,6 +61,11 @@ import { CreateRentalActivitiesComponent } from './pages/rental-activities/creat
 import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
 import { FindRentalActivitiesComponent } from './pages/rental-activities/find-rental-activities/find-rental-activities.component';
 
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -123,6 +128,11 @@ const routes: Routes = [
   { path: 'NewRent', component: CreateRentalActivitiesComponent },
   { path: 'UpdateRent/:id', component: UpdateRentalActivitiesComponent },
   { path: 'SearchRent', component: FindRentalActivitiesComponent },
+
+  { path: 'ListSubscription', component: ListSubscriptionComponent },
+  { path: 'NewSubscription', component: CreateSubscriptionComponent },
+  { path: 'UpdateSubscription/:id', component: UpdateSubscriptionComponent },
+  { path: 'SearchSubscription', component: FindSubscriptionComponent },
 ];
 
 @NgModule({
