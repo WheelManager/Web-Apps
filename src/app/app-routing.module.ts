@@ -46,6 +46,26 @@ import { CreateCommentComponent } from './pages/comment/create-comment/create-co
 import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
 import { FindCommentComponent } from './pages/comment/find-comment/find-comment.component';
 
+import { ListUserAddressComponent } from './pages/user-address/list-user-address/list-user-address.component';
+import { CreateUserAddressComponent } from './pages/user-address/create-user-address/create-user-address.component';
+import { UpdateUserAddressComponent } from './pages/user-address/update-user-address/update-user-address.component';
+import { FindUserAddressComponent } from './pages/user-address/find-user-address/find-user-address.component';
+
+import { ListCreditCardComponent } from './pages/credit-card/list-credit-card/list-credit-card.component';
+import { CreateCreditCardComponent } from './pages/credit-card/create-credit-card/create-credit-card.component';
+import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
+import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/find-credit-card.component';
+
+import { ListRentalActivitiesComponent } from './pages/rental-activities/list-rental-activities/list-rental-activities.component';
+import { CreateRentalActivitiesComponent } from './pages/rental-activities/create-rental-activities/create-rental-activities.component';
+import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
+import { FindRentalActivitiesComponent } from './pages/rental-activities/find-rental-activities/find-rental-activities.component';
+
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -93,6 +113,26 @@ const routes: Routes = [
   { path: 'NewComment', component: CreateCommentComponent },
   { path: 'UpdateComment/:id', component: UpdateCommentComponent },
   { path: 'SearchComment', component: FindCommentComponent },
+
+  { path: 'ListUserAddress', component: ListUserAddressComponent },
+  { path: 'NewUserAddress', component: CreateUserAddressComponent },
+  { path: 'UpdateUserAddress/:id', component: UpdateUserAddressComponent },
+  { path: 'SearchUserAddress', component: FindUserAddressComponent },
+
+  { path: 'ListCreditCard', component: ListCreditCardComponent },
+  { path: 'NewCreditCard', component: CreateCreditCardComponent },
+  { path: 'UpdateCreditCard/:id', component: UpdateCreditCardComponent },
+  { path: 'SearchCreditCard', component: FindCreditCardComponent },
+
+  { path: 'ListRent', component: ListRentalActivitiesComponent },
+  { path: 'NewRent', component: CreateRentalActivitiesComponent },
+  { path: 'UpdateRent/:id', component: UpdateRentalActivitiesComponent },
+  { path: 'SearchRent', component: FindRentalActivitiesComponent },
+
+  { path: 'ListSubscription', component: ListSubscriptionComponent },
+  { path: 'NewSubscription', component: CreateSubscriptionComponent },
+  { path: 'UpdateSubscription/:id', component: UpdateSubscriptionComponent },
+  { path: 'SearchSubscription', component: FindSubscriptionComponent },
 ];
 
 @NgModule({

@@ -1,10 +1,10 @@
 <br />
-<h2 class="text-center text-uppercase">Search Offers</h2>
+<h2 class="text-center text-uppercase">Search Subscription</h2>
 <br />
 <div class="container">
   <div class="row g-2">
     <div class="col-md">
-      <form class="form-floating" (ngSubmit)="searchOfferById()">
+      <form class="form-floating" (ngSubmit)="searchSubscriptionById()">
         <input
           type="number"
           class="form-control"
@@ -12,7 +12,7 @@
           name="id"
           required
           [(ngModel)]="id"
-          placeholder="Search Offer by Id"
+          placeholder="Search Subscription by Id"
         />
         <label class="form-control-plaintext" for="id">Id :</label>
         <div class="d-grid col-2 mx-auto">
@@ -20,8 +20,8 @@
         </div>
         <div class="card mx-auto" style="width: 18rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngIf="offer">
-              {{ offer.id }} - {{ offer.offerName }}
+            <li class="list-group-item" *ngIf="subscription">
+              {{ subscription.id }} - {{ subscription.description }}
             </li>
           </ul>
         </div>
@@ -29,26 +29,29 @@
     </div>
     <!-- SEPARADOR -->
     <div class="col-md">
-      <form class="form-floating" (ngSubmit)="searchOfferByName()">
+      <form class="form-floating" (ngSubmit)="searchSubscriptionByStartDate()">
         <input
           type="text"
           class="form-control"
-          id="offerName"
-          name="offerName"
+          id="startDate"
+          name="startDate"
           required
-          [(ngModel)]="offerName"
-          placeholder="Search Brand by Offer Name"
+          [(ngModel)]="startDate"
+          placeholder="Search Subscription in Start Date"
         />
-        <label class="form-control-plaintext" for="offerName">
-          Offer Name :
+        <label class="form-control-plaintext" for="startDate">
+          Start Date :
         </label>
         <div class="d-grid col-2 mx-auto">
           <button type="submit" class="btn btn-outline-success">Search</button>
         </div>
         <div class="card mx-auto" style="width: 18rem">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let offer of offers">
-              <h4>{{ offer.id }} - {{ offer.offerName }}</h4>
+            <li
+              class="list-group-item"
+              *ngFor="let subscription of subscriptions"
+            >
+              <h4>{{ subscription.id }} - {{ subscription.description }}</h4>
             </li>
           </ul>
         </div>

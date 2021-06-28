@@ -53,6 +53,26 @@ import { FindCommentComponent } from './pages/comment/find-comment/find-comment.
 import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
 import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
 
+import { CreateUserAddressComponent } from './pages/user-address/create-user-address/create-user-address.component';
+import { FindUserAddressComponent } from './pages/user-address/find-user-address/find-user-address.component';
+import { ListUserAddressComponent } from './pages/user-address/list-user-address/list-user-address.component';
+import { UpdateUserAddressComponent } from './pages/user-address/update-user-address/update-user-address.component';
+
+import { CreateCreditCardComponent } from './pages/credit-card/create-credit-card/create-credit-card.component';
+import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/find-credit-card.component';
+import { ListCreditCardComponent } from './pages/credit-card/list-credit-card/list-credit-card.component';
+import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
+
+import { CreateRentalActivitiesComponent } from './pages/rental-activities/create-rental-activities/create-rental-activities.component';
+import { FindRentalActivitiesComponent } from './pages/rental-activities/find-rental-activities/find-rental-activities.component';
+import { ListRentalActivitiesComponent } from './pages/rental-activities/list-rental-activities/list-rental-activities.component';
+import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
+
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -96,11 +116,31 @@ import { UpdateCommentComponent } from './pages/comment/update-comment/update-co
     FindAddressComponent,
     ListAddressComponent,
     UpdateAddressComponent,
-    
+
     CreateCommentComponent,
     FindCommentComponent,
     ListCommentComponent,
     UpdateCommentComponent,
+
+    CreateUserAddressComponent,
+    FindUserAddressComponent,
+    ListUserAddressComponent,
+    UpdateUserAddressComponent,
+
+    CreateCreditCardComponent,
+    FindCreditCardComponent,
+    ListCreditCardComponent,
+    UpdateCreditCardComponent,
+
+    CreateRentalActivitiesComponent,
+    FindRentalActivitiesComponent,
+    ListRentalActivitiesComponent,
+    UpdateRentalActivitiesComponent,
+    
+    CreateSubscriptionComponent,
+    FindSubscriptionComponent,
+    ListSubscriptionComponent,
+    UpdateSubscriptionComponent,
   ],
   imports: [
     BrowserModule,
