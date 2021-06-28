@@ -51,6 +51,11 @@ import { CreateUserAddressComponent } from './pages/user-address/create-user-add
 import { UpdateUserAddressComponent } from './pages/user-address/update-user-address/update-user-address.component';
 import { FindUserAddressComponent } from './pages/user-address/find-user-address/find-user-address.component';
 
+import { ListCreditCardComponent } from './pages/credit-card/list-credit-card/list-credit-card.component';
+import { CreateCreditCardComponent } from './pages/credit-card/create-credit-card/create-credit-card.component';
+import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
+import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/find-credit-card.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -103,6 +108,11 @@ const routes: Routes = [
   { path: 'NewUserAddress', component: CreateUserAddressComponent },
   { path: 'UpdateUserAddress/:id', component: UpdateUserAddressComponent },
   { path: 'SearchUserAddress', component: FindUserAddressComponent },
+
+  { path: 'ListCreditCard', component: ListCreditCardComponent },
+  { path: 'NewCreditCard', component: CreateCreditCardComponent },
+  { path: 'UpdateCreditCard/:id', component: UpdateCreditCardComponent },
+  { path: 'SearchCreditCard', component: FindCreditCardComponent },
 ];
 
 @NgModule({
