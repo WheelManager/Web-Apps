@@ -68,6 +68,11 @@ import { FindRentalActivitiesComponent } from './pages/rental-activities/find-re
 import { ListRentalActivitiesComponent } from './pages/rental-activities/list-rental-activities/list-rental-activities.component';
 import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
 
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -131,6 +136,11 @@ import { UpdateRentalActivitiesComponent } from './pages/rental-activities/updat
     FindRentalActivitiesComponent,
     ListRentalActivitiesComponent,
     UpdateRentalActivitiesComponent,
+    
+    CreateSubscriptionComponent,
+    FindSubscriptionComponent,
+    ListSubscriptionComponent,
+    UpdateSubscriptionComponent,
   ],
   imports: [
     BrowserModule,
