@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class UserAddressService {
-  private baseURL = 'http://localhost:8080/api/userAddress';
+  private baseURL =
+    'https://wheelmanagerhackdead.herokuapp.com/api/userAddress';
+  // private baseURL = 'http://localhost:8080/api/userAddress';
 
   constructor(private http: HttpClient) {}
 

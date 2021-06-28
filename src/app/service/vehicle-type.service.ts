@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class VehicleTypeService {
-  private baseURL = 'http://localhost:8080/api/vehicletypes';
+  private baseURL =
+    'https://wheelmanagerhackdead.herokuapp.com/api/vehicletypes';
+  // private baseURL = 'http://localhost:8080/api/vehicletypes';
 
   constructor(private http: HttpClient) {}
 

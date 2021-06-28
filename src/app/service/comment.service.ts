@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CommentService {
-  private baseURL = 'http://localhost:8080/api/comments';
+  // private baseURL = 'http://localhost:8080/api/comments';
+  private baseURL = 'https://wheelmanagerhackdead.herokuapp.com/api/comments';
 
   constructor(private http: HttpClient) {}
 
