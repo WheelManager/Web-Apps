@@ -63,6 +63,11 @@ import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/fi
 import { ListCreditCardComponent } from './pages/credit-card/list-credit-card/list-credit-card.component';
 import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
 
+import { CreateRentalActivitiesComponent } from './pages/rental-activities/create-rental-activities/create-rental-activities.component';
+import { FindRentalActivitiesComponent } from './pages/rental-activities/find-rental-activities/find-rental-activities.component';
+import { ListRentalActivitiesComponent } from './pages/rental-activities/list-rental-activities/list-rental-activities.component';
+import { UpdateRentalActivitiesComponent } from './pages/rental-activities/update-rental-activities/update-rental-activities.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -121,6 +126,11 @@ import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-car
     FindCreditCardComponent,
     ListCreditCardComponent,
     UpdateCreditCardComponent,
+
+    CreateRentalActivitiesComponent,
+    FindRentalActivitiesComponent,
+    ListRentalActivitiesComponent,
+    UpdateRentalActivitiesComponent,
   ],
   imports: [
     BrowserModule,
