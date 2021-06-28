@@ -58,6 +58,11 @@ import { FindUserAddressComponent } from './pages/user-address/find-user-address
 import { ListUserAddressComponent } from './pages/user-address/list-user-address/list-user-address.component';
 import { UpdateUserAddressComponent } from './pages/user-address/update-user-address/update-user-address.component';
 
+import { CreateCreditCardComponent } from './pages/credit-card/create-credit-card/create-credit-card.component';
+import { FindCreditCardComponent } from './pages/credit-card/find-credit-card/find-credit-card.component';
+import { ListCreditCardComponent } from './pages/credit-card/list-credit-card/list-credit-card.component';
+import { UpdateCreditCardComponent } from './pages/credit-card/update-credit-card/update-credit-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -111,6 +116,11 @@ import { UpdateUserAddressComponent } from './pages/user-address/update-user-add
     FindUserAddressComponent,
     ListUserAddressComponent,
     UpdateUserAddressComponent,
+
+    CreateCreditCardComponent,
+    FindCreditCardComponent,
+    ListCreditCardComponent,
+    UpdateCreditCardComponent,
   ],
   imports: [
     BrowserModule,
