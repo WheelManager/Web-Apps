@@ -26,6 +26,26 @@ import { CreateVehicleComponent } from './pages/vehicle/create-vehicle/create-ve
 import { UpdateVehicleComponent } from './pages/vehicle/update-vehicle/update-vehicle.component';
 import { FindVehicleComponent } from './pages/vehicle/find-vehicle/find-vehicle.component';
 
+import { ListReservationComponent } from './pages/reservation/list-reservation/list-reservation.component';
+import { CreateReservationComponent } from './pages/reservation/create-reservation/create-reservation.component';
+import { UpdateReservationComponent } from './pages/reservation/update-reservation/update-reservation.component';
+import { FindReservationComponent } from './pages/reservation/find-reservation/find-reservation.component';
+
+import { ListOfferComponent } from './pages/offer/list-offer/list-offer.component';
+import { CreateOfferComponent } from './pages/offer/create-offer/create-offer.component';
+import { UpdateOfferComponent } from './pages/offer/update-offer/update-offer.component';
+import { FindOfferComponent } from './pages/offer/find-offer/find-offer.component';
+
+import { ListAddressComponent } from './pages/address/list-address/list-address.component';
+import { CreateAddressComponent } from './pages/address/create-address/create-address.component';
+import { UpdateAddressComponent } from './pages/address/update-address/update-address.component';
+import { FindAddressComponent } from './pages/address/find-address/find-address.component';
+
+import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
+import { CreateCommentComponent } from './pages/comment/create-comment/create-comment.component';
+import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
+import { FindCommentComponent } from './pages/comment/find-comment/find-comment.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -53,6 +73,26 @@ const routes: Routes = [
   { path: 'NewVehicle', component: CreateVehicleComponent },
   { path: 'UpdateVehicle/:id', component: UpdateVehicleComponent },
   { path: 'SearchVehicle', component: FindVehicleComponent },
+
+  { path: 'ListReservation', component: ListReservationComponent },
+  { path: 'NewReservation', component: CreateReservationComponent },
+  { path: 'UpdateReservation/:id', component: UpdateReservationComponent },
+  { path: 'SearchReservation', component: FindReservationComponent },
+
+  { path: 'ListOffer', component: ListOfferComponent },
+  { path: 'NewOffer', component: CreateOfferComponent },
+  { path: 'UpdateOffer/:id', component: UpdateOfferComponent },
+  { path: 'SearchOffer', component: FindOfferComponent },
+
+  { path: 'ListAddress', component: ListAddressComponent },
+  { path: 'NewAddress', component: CreateAddressComponent },
+  { path: 'UpdateAddress/:id', component: UpdateAddressComponent },
+  { path: 'SearchAddress', component: FindAddressComponent },
+
+  { path: 'ListComment', component: ListCommentComponent },
+  { path: 'NewComment', component: CreateCommentComponent },
+  { path: 'UpdateComment/:id', component: UpdateCommentComponent },
+  { path: 'SearchComment', component: FindCommentComponent },
 ];
 
 @NgModule({
