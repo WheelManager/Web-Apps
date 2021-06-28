@@ -53,6 +53,11 @@ import { FindCommentComponent } from './pages/comment/find-comment/find-comment.
 import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
 import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
 
+import { CreateUserAddressComponent } from './pages/user-address/create-user-address/create-user-address.component';
+import { FindUserAddressComponent } from './pages/user-address/find-user-address/find-user-address.component';
+import { ListUserAddressComponent } from './pages/user-address/list-user-address/list-user-address.component';
+import { UpdateUserAddressComponent } from './pages/user-address/update-user-address/update-user-address.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -96,11 +101,16 @@ import { UpdateCommentComponent } from './pages/comment/update-comment/update-co
     FindAddressComponent,
     ListAddressComponent,
     UpdateAddressComponent,
-    
+
     CreateCommentComponent,
     FindCommentComponent,
     ListCommentComponent,
     UpdateCommentComponent,
+
+    CreateUserAddressComponent,
+    FindUserAddressComponent,
+    ListUserAddressComponent,
+    UpdateUserAddressComponent,
   ],
   imports: [
     BrowserModule,
