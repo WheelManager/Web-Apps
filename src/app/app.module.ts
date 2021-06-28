@@ -53,6 +53,11 @@ import { FindCommentComponent } from './pages/comment/find-comment/find-comment.
 import { ListCommentComponent } from './pages/comment/list-comment/list-comment.component';
 import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
 
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,6 +106,11 @@ import { UpdateCommentComponent } from './pages/comment/update-comment/update-co
     FindCommentComponent,
     ListCommentComponent,
     UpdateCommentComponent,
+
+    ListSubscriptionComponent,
+    CreateSubscriptionComponent,
+    UpdateSubscriptionComponent,
+    FindSubscriptionComponent,
   ],
   imports: [
     BrowserModule,

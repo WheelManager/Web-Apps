@@ -46,6 +46,11 @@ import { CreateCommentComponent } from './pages/comment/create-comment/create-co
 import { UpdateCommentComponent } from './pages/comment/update-comment/update-comment.component';
 import { FindCommentComponent } from './pages/comment/find-comment/find-comment.component';
 
+import { ListSubscriptionComponent } from './pages/subscription/list-subscription/list-subscription.component';
+import { CreateSubscriptionComponent } from './pages/subscription/create-subscription/create-subscription.component';
+import { UpdateSubscriptionComponent } from './pages/subscription/update-subscription/update-subscription.component';
+import { FindSubscriptionComponent } from './pages/subscription/find-subscription/find-subscription.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'customer', pathMatch: 'full' },
 
@@ -93,6 +98,12 @@ const routes: Routes = [
   { path: 'NewComment', component: CreateCommentComponent },
   { path: 'UpdateComment/:id', component: UpdateCommentComponent },
   { path: 'SearchComment', component: FindCommentComponent },
+
+  {path: 'ListSubscription', component: ListSubscriptionComponent},
+  {path: 'NewSubscription', component: CreateSubscriptionComponent},
+  {path: 'UpdateSubscription/:id', component: UpdateSubscriptionComponent},
+  {path: 'SearchSubscription', component: FindSubscriptionComponent},
+
 ];
 
 @NgModule({
